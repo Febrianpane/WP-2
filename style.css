@@ -1,0 +1,259 @@
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seach{
+    display: flex;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color:lightgray
+}
+
+.LIMITEDOFFER{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.slider{
+    background: url(https://images.unsplash.com/photo-1537420327992-d6e192287183?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    overflow: hidden;
+}
+
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slideBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: aquamarine;
+}
+
+.sliderImg{
+    z-index: 1;
+}
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 12%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.sliderPrice {
+    position: absolute;
+    top: 25%;
+    right: 3350px;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.buyButton {
+    position: absolute;
+    top: 60%;
+    right: 45px;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: aquamarine ;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.buyButton:hover{
+    background-color: azure;
+    color: aquamarine;
+}
+
+.sliderItem:nth-child(1) .slideBg{
+    background-color: burlywood;
+}
+
+.sliderItem:nth-child(2) .slideBg{
+    background-color:darkturquoise;
+}
+
+.sliderItem:nth-child(3) .slideBg{
+    background-color:forestgreen;
+}
+
+.sliderItem:nth-child(4) .slideBg{
+    background-color:hotpink;
+}
+
+.sliderItem:nth-child(5) .slideBg{
+    background-color:darkolivegreen;
+}
+
+.sliderItem:nth-child(1) .slideBg{
+    background-color: burlywood;
+}
+
+.sliderItem:nth-child(2) .slideBg{
+    background-color:darkturquoise;
+}
+
+.sliderItem:nth-child(3) .slideBg{
+    background-color:forestgreen;
+}
+
+.sliderItem:nth-child(4) .slideBg{
+    background-color:hotpink;
+}
+
+.sliderItem:nth-child(5) .slideBg{
+    background-color:darkolivegreen;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featureDesc{
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+.product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 78%);
+}
+
+.productImg{
+    width: 50%;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+.productDesc{
+    font-style: 24px;
+    display: flex;
+}
+
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 45px;
+    background-color: blue;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child{
+    background-color: aqua;
+}
+
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.productButton{
+    float: right;
+    padding: 10px 20px;
+    background-color: blue;
+    color: yellow;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.productButton:hover{
+    background-color: yellow;
+    color: blue;
+}
